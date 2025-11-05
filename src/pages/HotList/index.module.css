@@ -1,0 +1,172 @@
+.container {
+  width: 367px;
+  min-height: 595px;
+  background: #FFFFFF;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px 24px 0;
+  margin-bottom: 0;
+  height: 38px;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 319px;
+  height: 1px;
+  background: #DDE6E9;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Microsoft YaHei UI', sans-serif;
+  color: #1C1C28;
+  margin: 0;
+  line-height: 1.27;
+}
+
+.moreLink {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Microsoft YaHei UI', sans-serif;
+  color: #0063F7;
+  text-decoration: none;
+  line-height: 1.27;
+}
+
+.moreLink:hover {
+  text-decoration: underline;
+}
+
+.tabsWrapper {
+  padding: 16px 24px 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(96, 97, 112, 0.16);
+}
+
+.tabsWrapper :global(.ant-tabs-nav) {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.tabsWrapper :global(.ant-tabs-nav::before) {
+  display: none;
+}
+
+.tabsWrapper :global(.ant-tabs-ink-bar) {
+  background: #3E7BFA;
+  height: 3px;
+  bottom: 0;
+}
+
+.tabsWrapper :global(.ant-tabs-tab) {
+  padding: 0 0 12px;
+  margin-right: 16px;
+}
+
+.tabsWrapper :global(.ant-tabs-tab-btn) {
+  padding: 0;
+}
+
+.tabLabelActive {
+  color: #0063F7;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Microsoft YaHei UI', sans-serif;
+}
+
+.tabLabel {
+  color: #1C1C28;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Microsoft YaHei UI', sans-serif;
+}
+
+.filterWrapper {
+  display: flex;
+  gap: 8px;
+  padding: 12px 24px;
+  margin-bottom: 0;
+  background: rgba(96, 97, 112, 0.1);
+  border-radius: 0;
+}
+
+.filterItem {
+  padding: 4px 6px;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 57px;
+}
+
+.filterItem:hover {
+  background: rgba(96, 97, 112, 0.15);
+}
+
+.filterItemActive {
+  background: #0063F7;
+}
+
+.filterText {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Microsoft YaHei UI', sans-serif;
+  color: #1C1C28;
+  line-height: 1.27;
+}
+
+.filterItemActive .filterText {
+  color: #FFFFFF;
+}
+
+.listHeader {
+  display: grid;
+  grid-template-columns: 24px 1fr 80px;
+  gap: 0;
+  padding: 8px 24px 8px 14px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.listHeader :nth-child(1) {
+  text-align: left;
+  padding-left: 0;
+}
+
+.listHeader :nth-child(2) {
+  text-align: left;
+  padding-left: 90px;
+}
+
+.listHeader :nth-child(3) {
+  text-align: right;
+  padding-right: 0;
+}
+
+.headerCell {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Microsoft YaHei UI', sans-serif;
+  color: #606677;
+  line-height: 1.27;
+}
+
+.listContent {
+  padding: 0 14px;
+  margin-top: 0;
+}
+

@@ -1,0 +1,42 @@
+.appContainer {
+  min-height: 100vh;
+  background: #2E3A59;
+  padding: 20px;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+  /* max-width: 1400px; */ /* 注释：移除最大宽度限制，让图表全面展示 */
+  margin: 0 auto;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 0;
+  width: 100%; /* 确保右列占满可用空间 */
+}
+
+/* 注释：移除响应式限制，让图表始终全面展示 */
+/* @media (max-width: 1200px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  
+  .rightColumn {
+    width: 100%;
+  }
+} */
+

@@ -1,0 +1,135 @@
+{
+  "version": "1.0.0",
+  "projectName": "vite-project",
+  "framework": {
+    "name": "React",
+    "version": "18+",
+    "language": "TypeScript"
+  },
+  "codeGeneration": {
+    "componentNaming": "PascalCase",
+    "fileNaming": "PascalCase",
+    "cssNaming": "kebab-case",
+    "cssModules": true,
+    "useTypeScript": true
+  },
+  "styles": {
+    "method": "CSS Modules",
+    "useCSSVariables": true,
+    "responsiveDesign": true,
+    "mobileFirst": true
+  },
+  "designTokens": {
+    "spacingBase": 4,
+    "spacingScale": [4, 8, 16, 24, 32, 48, 64],
+    "fontSizes": {
+      "xs": "12px",
+      "sm": "14px",
+      "base": "16px",
+      "lg": "18px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "28px",
+      "4xl": "32px"
+    },
+    "fontWeights": {
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "borderRadius": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "full": "9999px"
+    }
+  },
+  "components": {
+    "uiLibrary": "none",
+    "customComponentsPath": "src/components",
+    "commonComponentsPath": "src/components/common",
+    "layoutComponentsPath": "src/components/layout",
+    "businessComponentsPath": "src/components/business"
+  },
+  "accessibility": {
+    "required": true,
+    "ariaLabels": true,
+    "keyboardNavigation": true,
+    "colorContrast": "WCAG AA"
+  },
+  "performance": {
+    "lazyLoading": true,
+    "imageOptimization": true,
+    "codeSplitting": true
+  },
+  "fileStructure": {
+    "pages": "src/pages",
+    "components": "src/components",
+    "hooks": "src/hooks",
+    "utils": "src/utils",
+    "types": "src/types",
+    "constants": "src/constants",
+    "assets": "src/assets",
+    "styles": "src/styles"
+  },
+  "codeQuality": {
+    "eslint": true,
+    "prettier": true,
+    "typeScript": true,
+    "componentProps": "required",
+    "defaultProps": "recommended"
+  },
+  "figmaMapping": {
+    "button": {
+      "element": "Button / Auto Layout",
+      "component": "button or Button component",
+      "requiredProps": ["children", "onClick"]
+    },
+    "input": {
+      "element": "Text Input",
+      "component": "input or Input component",
+      "requiredProps": ["type", "placeholder", "value", "onChange"]
+    },
+    "card": {
+      "element": "Frame / Rectangle with shadow",
+      "component": "div with Card component",
+      "requiredProps": ["children"]
+    },
+    "image": {
+      "element": "Image / Vector",
+      "component": "img or Image component",
+      "requiredProps": ["src", "alt"]
+    },
+    "text": {
+      "element": "Text",
+      "component": "p, h1-h6, span",
+      "requiredProps": ["children"]
+    },
+    "icon": {
+      "element": "Vector / Icon",
+      "component": "SVG or Icon component",
+      "requiredProps": ["name or icon path"]
+    }
+  },
+  "responsiveBreakpoints": {
+    "xs": "480px",
+    "sm": "768px",
+    "md": "1024px",
+    "lg": "1280px",
+    "xl": "1920px"
+  },
+  "rules": [
+    "使用 TypeScript 类型定义所有 Props",
+    "优先使用 CSS Modules",
+    "使用 CSS 变量管理设计 Token",
+    "实现响应式设计",
+    "确保可访问性",
+    "优化性能（懒加载、代码分割）",
+    "遵循命名规范",
+    "组件单一职责",
+    "代码可维护和可扩展"
+  ]
+}
+
